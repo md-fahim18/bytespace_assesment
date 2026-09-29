@@ -23,7 +23,7 @@ export default function CourseCard({ course, className = "", priority = false })
           sizes="(min-width: 1024px) 380px, (min-width: 640px) 45vw, 100vw"
           className="object-cover"
         />
-        <div className="absolute inset-x-0 bottom-0 flex flex-wrap gap-1.5 bg-gradient-to-t from-black/45 to-transparent p-2.5 pt-8">
+        {/* <div className="absolute inset-x-0 bottom-0 flex flex-wrap gap-1.5 bg-gradient-to-t from-black/45 to-transparent p-2.5 pt-8">
           {[course.lessons, course.duration, course.comments].map((t) => (
             <span
               key={t}
@@ -32,7 +32,7 @@ export default function CourseCard({ course, className = "", priority = false })
               {t}
             </span>
           ))}
-        </div>
+        </div> */}
       </div>
 
       <div className="mt-3 flex items-center justify-between gap-3">
