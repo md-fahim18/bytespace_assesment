@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Menu, ShoppingBag, X } from "lucide-react";
 import Logo from "./Logo";
 import { navLinks } from "@/lib/data";
@@ -28,8 +29,8 @@ export default function Navbar() {
         </ul>
 
         <div className="hidden items-center justify-end gap-6 text-sm text-white md:flex">
-          <a href="#" className="text-white/80 transition hover:text-white">Sign In</a>
-          <a href="#" className="text-white/80 transition hover:text-white">Join Us</a>
+          <Link href="/sign-in" className="text-white/80 transition hover:text-white">Sign In</Link>
+          <Link href="/join-us" className="text-white/80 transition hover:text-white">Join Us</Link>
           <button type="button" aria-label="Cart" className="text-white transition hover:text-lime">
             <ShoppingBag size={18} />
           </button>
@@ -49,9 +50,17 @@ export default function Navbar() {
       {open && (
         <div className="container-x md:hidden">
           <ul className="flex flex-col gap-4 rounded-2xl bg-white p-5 text-sm font-medium text-ink shadow-float">
-            {[...navLinks.map((l) => l.label), "Sign In", "Join Us"].map((label) => (
-              <li key={label}>
-                <a href="#" onClick={() => setOpen(false)}>{label}</a>
+            {navLinks.map((l) => (
+              <li key={l.label}>
+                <a href={l.href} onClick={() => setOpen(false)}>{l.label}</a>
+              </li>
+            ))}
+            {[
+              { label: "Sign In", href: "/sign-in" },
+              { label: "Join Us", href: "/join-us" },
+            ].map((l) => (
+              <li key={l.label}>
+                <Link href={l.href} onClick={() => setOpen(false)}>{l.label}</Link>
               </li>
             ))}
           </ul>
