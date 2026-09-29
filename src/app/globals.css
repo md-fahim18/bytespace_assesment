@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-[1264px] px-5 md:px-8;
+  }
+
+  /* blue hero / CTA background with the faint square grid */
+  .bg-grid-blue {
+    background-color: #0b3bff;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.09) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.09) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+
+  /* soft blue + lime washes behind the "growth" sections */
+  .bg-growth {
+    background:
+      radial-gradient(55% 22% at 92% 12%, rgba(200, 244, 0, 0.28), transparent 70%),
+      radial-gradient(45% 20% at 4% 40%, rgba(11, 59, 255, 0.14), transparent 70%),
+      radial-gradient(50% 22% at 96% 62%, rgba(11, 59, 255, 0.10), transparent 70%),
+      radial-gradient(45% 18% at 8% 96%, rgba(200, 244, 0, 0.26), transparent 70%),
+      #fff;
+  }
+
+  .bg-community {
+    background:
+      radial-gradient(60% 40% at 88% 0%, rgba(200, 244, 0, 0.32), transparent 70%),
+      #fff;
+  }
+
+  .section-title {
+    @apply text-3xl font-semibold leading-tight tracking-tight text-ink md:text-[40px];
+  }
+  .section-copy {
+    @apply text-sm leading-relaxed text-body md:text-[15px];
+  }
+}

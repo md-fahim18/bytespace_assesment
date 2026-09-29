@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 480" fill="none">
+<path d="M60.0 480 C60.0 330 130.0 270 250.0 270 C370.0 270 440.0 330 440.0 480Z" fill="#F7A9A0"/>
+<circle cx="250.0" cy="153.6" r="76.8" fill="#3B2A22"/>
+<rect x="180.0" y="310" width="140" height="90" rx="10" fill="#1F2937" opacity=".85"/>
+<text x="250.0" y="460" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#fff" opacity=".9">replace: hero-student</text>
+</svg>
