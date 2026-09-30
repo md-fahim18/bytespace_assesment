@@ -46,7 +46,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 flex flex-col gap-3 border-t border-line py-6 text-[10px] text-body sm:flex-row sm:items-center sm:justify-between md:mt-24">
-          <p>&copy; 2023 ByteSpace. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} ByteSpace. All rights reserved.</p>
           <ul className="flex gap-6">
             {legalLinks.map((l) => (
               <li key={l}><a href="#" className="transition hover:text-brand">{l}</a></li>
