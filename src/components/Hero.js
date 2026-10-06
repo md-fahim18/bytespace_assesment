@@ -22,7 +22,7 @@ export default function Hero() {
 
       <div className="container-x relative z-10 pt-[130px] text-center md:pt-[190px]">
         <h1 className="mx-auto max-w-[900px] text-[38px] font-semibold leading-[1.12] tracking-tight sm:text-6xl lg:text-[72px]">
-          Get to Hundreds <br className="hidden sm:block" />
+          Get Access to Hundreds <br className="hidden sm:block" />
           Courses Available
         </h1>
         <p className="mx-auto mt-6 max-w-[620px] text-sm text-white/80 md:mt-8 md:text-base">
