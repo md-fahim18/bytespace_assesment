@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <Logo variant="dark" />
             <p className="mt-4 max-w-[380px] text-xs text-body">
-              Stay Up to date with our latest features and .
+              Stay Up to date with  features and releases by joining our newsletter.
             </p>
             <form className="mt-5 flex max-w-[420px] items-center gap-2" action="#">
               <label className="flex-1">
