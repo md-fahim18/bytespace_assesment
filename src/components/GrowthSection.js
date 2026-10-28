@@ -17,7 +17,7 @@ function GrowthRow() {
         </h2>
         <p className="section-copy mt-6 max-w-[480px]">
           Explore our curated selection of courses tailored to enhance your capabilities and accelerate your career
-          journey. Whether you are looking to sharpen specific skills, gain industry expertise, or embark on a new
+          journey. Whether are looking to sharpen specific skills, gain industry expertise, or embark on a new
           career path entirely, we have the resources you need.
         </p>
         <dl className="mt-8 flex gap-10">
