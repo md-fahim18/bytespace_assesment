@@ -16,7 +16,7 @@ function GrowthRow() {
           Your Path to Professional Growth Starts Here!
         </h2>
         <p className="section-copy mt-6 max-w-[480px]">
-           our curated selection of courses tailored to enhance your capabilities and accelerate your career
+          Explore our curated selection of courses tailored to enhance your capabilities and accelerate your career
           journey. Whether you are looking to sharpen specific skills, gain industry expertise, or embark on a new
           career path entirely, we have the resources you need.
         </p>
